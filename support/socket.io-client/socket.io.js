@@ -1317,7 +1317,7 @@ if (typeof window != 'undefined'){
 // may have changed (for some reason the server drops the connection
 // sometimes) and prepareurl uses it, ow the post to the iframe fails since
 // it's using the old session-id now unknown to the server
-form.action = this.prepareUrl() + '/' + (+new Date) + '/' + this.index;
+this.form.action = this.prepareUrl() + '/' + (+new Date) + '/' + this.index;
 
     function complete(){
       initIframe();
